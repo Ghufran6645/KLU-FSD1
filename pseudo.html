@@ -6,14 +6,45 @@
     <title>pseudo classes and pseuodo elements</title>
     <style>
         input[type="number"]:out-of-range{
-        border: 2px solid red ;
+            border: 2px solid red ;
         }
-        input[type="number"]:out-of-range{
-        border: 2px solid green ;
+        input[type="number"]:in-range{
+             border: 2px solid green ;
         }
+        input[type="email"]:invalid{
+             border: 2px solid red ;
+        }
+        input[type="email"]::placeholder{
+            color: blue;
+        }
+        p::first-line{
+             text-decoration-color: red;
+        }
+        p::first-letter{
+            font-size: 20px;
+            color: green;
+        }
+        p ::before{
+            content: "KLU";
+        }
+        p ::after{
+            content: "END";
+        }
+        p ::selection{
+            background-color: grey;
+            color: white;
+        }
+
     </style>
 </head>
 <body>
     <input type="number" placeholder="enter age" min="0" max="18" style="width: 500px;">
+    <br><br>
+    <input type="email" placeholder="enter the email">
+    <br><br>
+    <p>
+        Established in 1980 as a college of engineering, it consists of eight schools, offering academic programs at UG, PG, doctoral, and post-doctoral industry
+    </p>
+
 </body>
 </html>
