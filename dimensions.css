@@ -10,3 +10,14 @@
 .c3{
     font-size: 3em;
 }
+
+.percent_class{
+    width: 400px;
+    height: 250px;
+    border: 1px solid red ;
+}
+
+.c4{
+    width: 50%;
+    background-color: green;
+}
